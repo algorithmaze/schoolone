@@ -46,7 +46,7 @@ const AdmissionsPage = () => {
         </ul>
       </section>
 
-      <button className="apply-now-btn" data-aos="zoom-in" data-aos-delay="300">
+      <button type="button" className="apply-now-btn" data-aos="zoom-in" data-aos-delay="300">
         Apply Now
       </button>
     </div>

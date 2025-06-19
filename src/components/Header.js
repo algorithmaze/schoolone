@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Header.css'; // Create or ensure this file exists
 
 const Header = ({ setActivePage }) => {
@@ -17,4 +18,9 @@ const Header = ({ setActivePage }) => {
     </header>
   );
 };
+
+Header.propTypes = {
+  setActivePage: PropTypes.func.isRequired,
+};
+
 export default Header;
