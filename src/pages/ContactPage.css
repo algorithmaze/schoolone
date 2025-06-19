@@ -1,0 +1,125 @@
+.contact-page {
+  padding: 20px;
+  max-width: 1000px; /* Wider for map and form */
+  margin: 0 auto;
+  color: #333;
+}
+
+.contact-page h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #0056b3;
+}
+
+.contact-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between details and form */
+  margin-bottom: 30px; /* Space before map section */
+}
+
+.contact-details, .contact-form-placeholder {
+  flex: 1; /* Each takes roughly half the space */
+  min-width: 320px; /* Minimum width before wrapping, adjusted for padding */
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.contact-details h3, .contact-form-placeholder h3 {
+  font-size: 1.8em;
+  color: #007bff;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.contact-details p {
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+.contact-details p strong {
+    color: #333;
+}
+
+.contact-details a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 18px; /* Increased spacing */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px; /* Spacing between label and input */
+  font-weight: bold;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px; /* Slightly more padding */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Slightly more rounded */
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Subtle focus shadow */
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px; /* Minimum textarea height */
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px; /* Adjusted padding */
+  font-size: 1.05em; /* Slightly larger font */
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block; /* To allow margin auto if needed, or text-align on parent */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.map-section {
+  flex-basis: 100%; /* Map takes full width */
+  /* margin-top: 20px; Removed, gap in flex-wrapper handles it */
+}
+.map-section h3{
+    text-align:center;
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 20px; /* Increased margin */
+}
+.map-section iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Slightly more pronounced shadow */
+}

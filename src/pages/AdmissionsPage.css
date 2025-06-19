@@ -1,0 +1,114 @@
+.admissions-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.admissions-page h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #0056b3; /* Theme color */
+}
+
+.admissions-section {
+  background-color: #f9f9f9;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.admissions-section h3 {
+  font-size: 1.8em;
+  color: #007bff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.process-steps {
+  list-style-type: none; /* Remove default numbering */
+  padding-left: 0;
+  counter-reset: step-counter; /* For custom counters */
+}
+
+.process-steps li {
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 45px; /* Space for custom counter + a bit more */
+}
+
+/* Custom counter styling */
+.process-steps li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Vertically center */
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.requirements ul, .key-dates ul {
+  list-style-type: none; /* Changed to none, will use custom icons or just text */
+  margin-left: 0; /* Adjusted from 20px */
+  padding-left: 0;
+}
+
+.requirements li, .key-dates li {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px; /* Increased margin for better spacing */
+  padding-left: 25px; /* Space for a pseudo-element icon */
+  position: relative;
+}
+
+/* Adding a simple bullet-like pseudo-element for requirements and key-dates */
+.requirements li::before, .key-dates li::before {
+    content: "✓"; /* Check mark or use • for bullet: "•" */
+    position: absolute;
+    left: 0;
+    top: 0px; /* Adjust as needed for vertical alignment */
+    color: #28a745; /* Green color for the check/bullet */
+    font-weight: bold;
+    font-size: 1.2em; /* Adjust size of the icon */
+}
+.key-dates li::before {
+    content: "📅"; /* Calendar icon for dates */
+    color: #007bff; /* Blue for dates */
+    font-size: 1em; /* Adjust size of the icon */
+}
+
+
+.apply-now-btn {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0 auto; /* Center button */
+  background-color: #28a745; /* Green color for apply */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.apply-now-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
