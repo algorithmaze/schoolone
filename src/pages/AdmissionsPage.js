@@ -36,7 +36,7 @@ const AdmissionsPage = () => {
       </section>
 
       <section className="admissions-section key-dates" data-aos="fade-up" data-aos-delay="200">
-        <h3>Important Dates for Admission (2024-2025 Cycle)</h3>
+        <h3>Important Dates for Admission (Current/Upcoming Cycle)</h3>
         <ul>
           <li data-aos="zoom-in-up" data-aos-delay="250"><strong>Application Opening:</strong> September 1st, 2024</li>
           <li data-aos="zoom-in-up" data-aos-delay="300"><strong>Application Deadline:</strong> January 15th, 2025</li>

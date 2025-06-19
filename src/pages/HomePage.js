@@ -116,9 +116,9 @@ const HomePage = () => {
         <section className="highlights" data-aos="fade-up" data-aos-delay="600">
           <h2>Key Highlights</h2>
           {/* Placeholder for highlight items */}
-          <div className="highlight-item" data-aos="fade-left" data-aos-delay="800">Highlight 1...</div>
-          <div className="highlight-item" data-aos="fade-left" data-aos-delay="1000">Highlight 2...</div>
-          <div className="highlight-item" data-aos="fade-left" data-aos-delay="1200">Highlight 3...</div>
+          <div className="highlight-item" data-aos="fade-left" data-aos-delay="800">Experienced & Dedicated Faculty</div>
+          <div className="highlight-item" data-aos="fade-left" data-aos-delay="1000">Comprehensive & Modern Curriculum</div>
+          <div className="highlight-item" data-aos="fade-left" data-aos-delay="1200">Supportive & Engaging Learning Environment</div>
         </section>
       </div>
     </div>
