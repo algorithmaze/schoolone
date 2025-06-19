@@ -108,7 +108,7 @@ const HomePage = () => {
           <p data-aos="fade-up" data-aos-delay="200">
             Nurturing minds for a brighter future. Explore our programs and community.
           </p>
-          <button className="cta-button" data-aos="zoom-in" data-aos-delay="400">
+          <button type="button" className="cta-button" data-aos="zoom-in" data-aos-delay="400">
             Learn More
           </button>
         </section>
